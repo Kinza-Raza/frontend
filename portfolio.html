@@ -1,0 +1,778 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet" />
+<link href="about_style.css" rel="stylesheet" type="text/css" />
+
+<title>Portfolio</title>
+</head>
+
+<body>
+<br />
+<br />
+<div class="container-fluid">
+<div class="row justify-content-around">
+<div class="col-auto"><img  src="media/common/logox.png" href="" /> </div>
+<div class="col-auto mt-4">
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link" href="home.html">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="about.html">About Us</a>
+  </li>
+  <li class="nav-item dropdown"> 
+   <a class="nav-link" href="services.html" id="navbardrop" aria-haspopup="true" aria-expanded="false">  Services <i class="fas fa-angle-down"></i> </a>
+  <div class="dropdown-menu"  aria-labelledby="navbardrop" style="font-size:14px;">
+    <a class="dropdown-item" href="logodesign.html">Logo Designing</a>
+    <a class="dropdown-item" href="corporate.html">Corporate Branding</a>
+    <a class="dropdown-item" href="marketing.html">Digital Marketing</a>
+    <a class="dropdown-item" href="illustration.html">Illustration and Animation</a>
+    <a class="dropdown-item" href="webdesign.html">Web Designing</a>
+
+  </div>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link" href="pricing.html">Pricing</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" href="portfolio.html">Portfolio</a>
+  </li>
+  <li><a class="b1 ml-4" href="contact.html" style="color:white;">Contact Us </a>
+</li>
+</ul>
+        </div>
+    </div>
+  </div>
+
+    <br />
+    
+    
+<div class="container-fluid">
+	<div class="row align-items-center">
+    	<div class="col-md-5 ">
+        	  	<h2 class="ml-4" style="color:#000; font-size:40px;">Portfolio</h2>
+ 
+  <p class="ml-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros justo, pharetra in elementum ut, consequat eget augue. Ut iaculis in libero ac placerat. Nam vitae iaculis sapien.Pellentesque velit orci, suscipit ut finibus vitae, luctus sit amet dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros justo, pharetra in elementum ut, consequat eget augue. Ut iaculis in libero ac placerat. Nam vitae iaculis sapien.Pellentesque velit orci, suscipit ut finibus vitae, luctus sit amet dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros justo, pharetra in elementum ut, consequat eget augue. Ut iaculis in libero ac placerat. Nam vitae iaculis sapien.Pellentesque velit orci, suscipit ut finibus vitae, luctus sit amet dolor</p>
+  <p>&nbsp;</p>
+
+   <p>&nbsp;</p>
+        </div>
+        <div class="col"><img src="media/portfolio/poster4.jpg" class="img-fluid ml-3" style="width:100%; height:auto;"  /></div>
+    </div>
+    </div>
+
+<div class="container-fluid">
+<div class="row justify-content-center">
+<div class="col-auto">
+		<h2 class="ml-4" style="color:#000; font-size:40px;">Our Work</h2>
+</div>
+</div>
+
+<div class="row justify-content-center">
+<div class="col-auto">
+		<p class="lead text-black-50" style="color:#000;">A selection of our recent websites, eCommerce and SaaS applications </p>
+</div>
+</div>
+
+<div class="row justify-content-center no-gutters">
+<div class="col-auto p-3">
+<button class=" p5 rounded-pill b2" id="btn2" onclick="logo()">Logo Design</button>
+</div>
+
+<div class="col-auto p-3">
+<button class="rounded-pill b2" id="btn1" onclick="web()" style="background-color:#90529D;">Web Design</button>
+</div>
+
+<div class="col-auto p-3">
+<button class="rounded-pill b2" id="btn3" onclick="landing()" >Landing Page</button>
+</div>
+
+<div class="col-auto p-3">
+<button class="rounded-pill b2" id="btn4" onclick="app()" >App Design</button>
+</div>
+
+</div>
+</div>
+<script>
+function web() 
+{
+	document.getElementById("gallery").style.display = "block";
+	document.getElementById("gallery_2").style.display = "none";
+	document.getElementById("gallery_3").style.display = "none";
+	document.getElementById("gallery_4").style.display = "none";		
+		
+	
+	document.getElementById("btn1").style.backgroundColor = "#90529D";
+	document.getElementById("btn2").style.backgroundColor = "#F0F0F0";
+	document.getElementById("btn3").style.backgroundColor = "#F0F0F0";
+	document.getElementById("btn4").style.backgroundColor = "#F0F0F0";
+
+
+
+	}
+
+function logo() 
+{	
+		document.getElementById("gallery").style.display = "none";
+		document.getElementById("gallery_2").style.display = "block";	
+		document.getElementById("gallery_3").style.display = "none";
+		document.getElementById("gallery_4").style.display = "none";		
+		
+		document.getElementById("btn2").style.backgroundColor = "#90529D";
+		document.getElementById("btn1").style.backgroundColor = "#F0F0F0";
+		document.getElementById("btn3").style.backgroundColor = "#F0F0F0";
+		document.getElementById("btn4").style.backgroundColor = "#F0F0F0";
+
+	}
+	
+function landing() 
+{	
+		document.getElementById("gallery").style.display = "none";
+		document.getElementById("gallery_2").style.display = "none";
+		document.getElementById("gallery_3").style.display = "block";	
+		document.getElementById("gallery_4").style.display = "none";		
+	
+		document.getElementById("btn3").style.backgroundColor = "#90529D";
+		document.getElementById("btn1").style.backgroundColor = "#F0F0F0";
+		document.getElementById("btn2").style.backgroundColor = "#F0F0F0";
+		document.getElementById("btn4").style.backgroundColor = "#F0F0F0";
+
+	}
+	
+function app() 
+{	
+		document.getElementById("gallery").style.display = "none";
+		document.getElementById("gallery_2").style.display = "none";
+		document.getElementById("gallery_3").style.display = "none";				
+		document.getElementById("gallery_4").style.display = "block";
+				
+		document.getElementById("btn4").style.backgroundColor = "#90529D";
+		document.getElementById("btn1").style.backgroundColor = "#F0F0F0";
+		document.getElementById("btn3").style.backgroundColor = "#F0F0F0";
+		document.getElementById("btn2").style.backgroundColor = "#F0F0F0";
+
+	}
+
+
+</script>
+											<!--Portfolio Container-->
+<div class="container-fluid cf_1"  id="gallery">
+<div class="row no-gutters justify-content-center ml-4" >
+  <div class=" col-6 col-md-auto col-lg-auto p-2 ">
+  <div class="cont"  >
+    <img class="p-2" src="media/portfolio/1.jpg" /> 
+                	<a data-fancybox="gallery1" href="media/portfolio/1.jpg" ><div class="overlay ml-2" id=" gallery1 ">
+                    	<div class="text">Web Design<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+  <div class="  col-6 col-md-auto col-lg-auto p-2 ">
+  <div class="cont" >
+    <img class="p-2" src="media/portfolio/2.jpg" /> 
+                	<a data-fancybox="gallery1" href="media/portfolio/2.jpg" ><div class="overlay ml-2" id=" gallery1 ">
+                    	<div class="text">Web Design<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+  </div>
+  
+  <div class="row no-gutters justify-content-center pt-4 ml-4" >
+  <div class=" col-6 col-md-auto col-lg-auto p-2 ">
+  <div class="cont" >
+    <img class="p-2" src="media/portfolio/3.jpg" /> 
+                	<a data-fancybox="gallery1" href="media/portfolio/3.jpg" ><div class="overlay ml-2" id=" gallery1 ">
+                    	<div class="text">Web Design<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+  <div class=" col-6 col-md-auto col-lg-auto p-2">
+  <div class="cont"  >
+    <img class="p-2" src="media/portfolio/4.jpg" />
+                	<a data-fancybox="gallery1" href="media/portfolio/4.jpg" ><div class="overlay ml-2" id=" gallery1 ">
+                    	<div class="text">Web Design<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+</div>
+
+<div class="row justify-content-center pt-4 ml-2" >
+  <div class="col-6 col-md-auto col-lg-auto p-2">
+  <div class="cont" >
+    <img class="p-2" src="media/portfolio/5.jpg" /> 
+                	<a data-fancybox="gallery1" href="media/portfolio/5.jpg" ><div class="overlay ml-2" id=" gallery1 ">
+                    	<div class="text">Web Design<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+  <div class="col-6 col-md-auto col-lg-auto p-2">
+  <div class="cont">
+   <img class="p-2" src="media/portfolio/6.jpg" /> 
+                	 <a data-fancybox="gallery1" href="media/portfolio/6.jpg" ><div class="overlay ml-2" id=" gallery1 ">
+                    	<div class="text">Web Design<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+  </div>
+  <div class="row justify-content-center pt-4 ml-2" >
+  <div class="col-6 col-md-auto col-lg-auto p-2">
+  <div class="cont" >
+   <img class="p-2" src="media/portfolio/7.jpg" /> 
+                	 <a data-fancybox="gallery1" href="media/portfolio/7.jpg" ><div class="overlay ml-2" id=" gallery1 ">
+                    	<div class="text">Web Design<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+  <div class="col-6 col-md-auto col-lg-auto p-2">
+  <div class="cont">
+    <img class="p-2" src="media/portfolio/8.jpg" /> 
+                	<a data-fancybox="gallery1" href="media/portfolio/8.jpg" ><div class="overlay ml-2" id=" gallery1 ">
+                    	<div class="text">Web Design<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+</div>
+
+</div>
+									<!--Logo Design-->
+<div class="container-fluid"  id="gallery_2">
+<div class="row justify-content-center ml-2" >
+  <div class="col-6 col-md-auto col-lg-auto p-2">
+  <div class="cont"  >
+    <img class="p-2" src="media/portfolio/9.jpg" /> 
+                	<a data-fancybox="gallery2" href="media/portfolio/9.jpg" ><div class="overlay ml-2" id=" gallery2 ">
+                    	<div class="text">Logo Design<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+  <div class="col-6 col-md-auto col-lg-auto p-2">
+  <div class="cont" >
+    <img class="p-2" src="media/portfolio/10.jpg" /> 
+                	<a data-fancybox="gallery2" href="media/portfolio/10.jpg" ><div class="overlay ml-2" id=" gallery2 ">
+                    	<div class="text">Logo Design<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+  </div>
+  
+  <div class="row justify-content-center pt-4 ml-2" >
+  <div class="col-6 col-md-auto col-lg-auto p-2">
+  <div class="cont" >
+    <img class="p-2" src="media/portfolio/11.jpg" /> 
+                	<a data-fancybox="gallery2" href="media/portfolio/11.jpg" ><div class="overlay ml-2" id=" gallery2 ">
+                    	<div class="text">Logo Design<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+  <div class="col-6 col-md-auto col-lg-auto p-2">
+  <div class="cont"  >
+    <img class="p-2" src="media/portfolio/12.jpg" />
+                	<a data-fancybox="gallery2" href="media/portfolio/12.jpg" ><div class="overlay ml-2" id=" gallery2 ">
+                    	<div class="text">Logo Design<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+</div>
+
+<div class="row justify-content-center pt-4 ml-2" >
+  <div class="col-6 col-md-auto col-lg-auto p-2">
+  <div class="cont" >
+    <img class="p-2" src="media/portfolio/13.jpg" /> 
+                	<a data-fancybox="gallery2" href="media/portfolio/13.jpg" ><div class="overlay ml-2" id=" gallery2 ">
+                    	<div class="text">Logo Design<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+  <div class="col-6 col-md-auto col-lg-auto p-2">
+  <div class="cont">
+   <img class="p-2" src="media/portfolio/14.jpg" /> 
+                	 <a data-fancybox="gallery2" href="media/portfolio/14.jpg" ><div class="overlay ml-2" id=" gallery2 ">
+                    	<div class="text">Logo Design<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+  </div>
+  
+  <div class="row justify-content-center pt-4 ml-2" >
+  <div class="col-6 col-md-auto col-lg-auto p-2">
+  <div class="cont" >
+   <img class="p-2" src="media/portfolio/15.jpg" /> 
+                	 <a data-fancybox="gallery2" href="media/portfolio/15.jpg" ><div class="overlay ml-2" id=" gallery2 ">
+                    	<div class="text">Logo Design<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+  <div class="col-6 col-md-auto col-lg-auto p-2">
+  <div class="cont">
+    <img class="p-2" src="media/portfolio/16.jpg" /> 
+                	<a data-fancybox="gallery2" href="media/portfolio/16.jpg" ><div class="overlay ml-2" id=" gallery2 ">
+                    	<div class="text">Logo Design<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+</div>
+
+</div>
+										<!-- Landing Page-->
+<div class="container-fluid"  id="gallery_3">
+<div class="row justify-content-center ml-2" >
+  <div class="col-6 col-md-auto col-lg-auto p-2">
+  <div class="cont"  >
+    <img class="p-2" src="media/portfolio/17.jpg" /> 
+                	<a data-fancybox="gallery3" href="media/portfolio/17.jpg" ><div class="overlay ml-2" id=" gallery3 ">
+                    	<div class="text">Landing Page<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+  <div class="col-6 col-md-auto col-lg-auto p-2">
+  <div class="cont" >
+    <img class="p-2" src="media/portfolio/18.jpg" /> 
+                	<a data-fancybox="gallery3" href="media/portfolio/18.jpg" ><div class="overlay ml-2" id=" gallery3 ">
+                    	<div class="text">Landing Page<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+  </div>
+  <div class="row justify-content-center pt-4 ml-2" >
+  <div class="col-6 col-md-auto col-lg-auto p-2">
+  <div class="cont" >
+    <img class="p-2" src="media/portfolio/19.jpg" /> 
+                	<a data-fancybox="gallery3" href="media/portfolio/19.jpg" ><div class="overlay ml-2" id=" gallery3 ">
+                    	<div class="text">Landing Page<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+  <div class="col-6 col-md-auto col-lg-auto p-2">
+  <div class="cont"  >
+    <img class="p-2" src="media/portfolio/20.jpg" />
+                	<a data-fancybox="gallery3" href="media/portfolio/20.jpg" ><div class="overlay ml-2" id=" gallery3 ">
+                    	<div class="text">Landing Page<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+</div>
+
+<div class="row justify-content-center pt-4 ml-2" >
+  <div class="col-6 col-md-auto col-lg-auto p-2">
+  <div class="cont" >
+    <img class="p-2" src="media/portfolio/21.jpg" /> 
+                	<a data-fancybox="gallery3" href="media/portfolio/21.jpg" ><div class="overlay ml-2" id=" gallery3 ">
+                    	<div class="text">Landing Page<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+  <div class="col-6 col-md-auto col-lg-auto p-2">
+  <div class="cont">
+   <img class="p-2" src="media/portfolio/22.jpg" /> 
+                	 <a data-fancybox="gallery3" href="media/portfolio/22.jpg" ><div class="overlay ml-2" id=" gallery3 ">
+                    	<div class="text">Landing Page<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+ </div>
+ <div class="row justify-content-center pt-4 ml-2" >
+  <div class="col-6 col-md-auto col-lg-auto p-2">
+  <div class="cont" >
+   <img class="p-2" src="media/portfolio/23.jpg" /> 
+                	 <a data-fancybox="gallery3" href="media/portfolio/23.jpg" ><div class="overlay ml-2" id=" gallery3 ">
+                    	<div class="text">Landing Page<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+  <div class="col-6 col-md-auto col-lg-auto p-2">
+  <div class="cont">
+    <img class="p-2" src="media/portfolio/24.jpg" /> 
+                	<a data-fancybox="gallery3" href="media/portfolio/24.jpg" ><div class="overlay ml-2" id=" gallery3 ">
+                    	<div class="text">Landing Page<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+</div>
+
+</div>
+											<!-- App Design -->
+<div class="container-fluid"  id="gallery_4">
+<div class="row justify-content-center ml-2" >
+  <div class="col-6 col-md-auto col-lg-auto p-2">
+  <div class="cont"  >
+    <img class="p-2" src="media/portfolio/25.jpg" /> 
+                	<a data-fancybox="gallery4" href="media/portfolio/25.jpg" ><div class="overlay ml-2" id=" gallery4 ">
+                    	<div class="text">App Design<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+  <div class="col-6 col-md-auto col-lg-auto p-2">
+  <div class="cont" >
+    <img class="p-2" src="media/portfolio/26.jpg" /> 
+                	<a data-fancybox="gallery4" href="media/portfolio/26.jpg" ><div class="overlay ml-2" id=" gallery4 ">
+                    	<div class="text">App Design<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+  </div>
+  
+  <div class="row justify-content-center pt-4 ml-2" >
+  <div class="col-6 col-md-auto col-lg-auto p-2">
+  <div class="cont" >
+    <img class="p-2" src="media/portfolio/27.jpg" /> 
+                	<a data-fancybox="gallery4" href="media/portfolio/27.jpg" ><div class="overlay ml-2" id=" gallery4 ">
+                    	<div class="text">Landing Page<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+  <div class="col-6 col-md-auto col-lg-auto p-2">
+  <div class="cont"  >
+    <img class="p-2" src="media/portfolio/28.jpg" />
+                	<a data-fancybox="gallery4" href="media/portfolio/28.jpg" ><div class="overlay ml-2" id=" gallery4 ">
+                    	<div class="text">Landing Page<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+</div>
+
+<div class="row justify-content-center pt-4 ml-2" >
+  <div class="col-6 col-md-auto col-lg-auto p-2">
+  <div class="cont" >
+    <img class="p-2" src="media/portfolio/29.jpg" /> 
+                	<a data-fancybox="gallery4" href="media/portfolio/29.jpg" ><div class="overlay ml-2" id=" gallery4 ">
+                    	<div class="text">Landing Page<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+  <div class="col-6 col-md-auto col-lg-auto p-2">
+  <div class="cont">
+   <img class="p-2" src="media/portfolio/30.jpg" /> 
+                	 <a data-fancybox="gallery4" href="media/portfolio/30.jpg" ><div class="overlay ml-2" id=" gallery4 ">
+                    	<div class="text">Landing Page<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+  </div>
+  
+  <div class="row justify-content-center pt-4 ml-2" >
+  <div class="col-6 col-md-auto col-lg-auto p-2">
+  <div class="cont" >
+   <img class="p-2" src="media/portfolio/31.jpg" /> 
+                	 <a data-fancybox="gallery4" href="media/portfolio/31.jpg" ><div class="overlay ml-2" id=" gallery4 ">
+                    	<div class="text">Landing Page<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+  <div class="col-6 col-md-auto col-lg-auto p-2">
+  <div class="cont">
+    <img class="p-2" src="media/portfolio/32.jpg" /> 
+                	<a data-fancybox="gallery4" href="media/portfolio/32.jpg" ><div class="overlay ml-2" id=" gallery4 ">
+                    	<div class="text">Landing Page<br />
+                        <i class=" fa fa-search"></i></div>
+                </div></a>
+  </div>
+  </div>
+</div>
+
+</div>
+
+									<!--End of portfolio container-->
+<br />
+<br />
+
+											<!--References-->
+<div class="container-fluid" style="background-color:#F3F9F9;">
+<br />
+<br />
+	<div class="row no-gutters justify-content-center">
+    	<div class="col-md-4">
+            <h4 class="text-center" style="color:#90529D; font-size:16px; ">PARTNERS</h4> </div>
+    </div>
+   	<div class="row justify-content-center">
+    	<div class="col-md-7">     <h2 class="text-center" style="color:#000;">Our References</h2>
+</div>
+    </div>
+ </div>   
+
+<div class="container-fluid" style="background-color:#F3F9F9;">
+	<div class="row no-gutters justify-content-center">
+    	<div class="col-auto p-4">
+        	<img src="media/common/logo1.png"  class="rounded-circle logo" height="100px" width="100px" />
+        </div>
+        
+        <div class="col-auto p-4">
+        	<img src="media/common/logo4.png"  class="rounded-circle mt-4 logo" height="70px" width="70px" />
+        </div>
+
+        <div class="col-auto p-4">
+        	<img src="media/common/logo2.png"  class="rounded-circle logo" height="100px" width="100px" />
+        </div>
+
+        <div class="col-auto p-4">
+        	<img src="media/common/logo3.jpg"  class="rounded-circle mt-4 logo" height="70px" width="70px" />
+        </div>
+
+        <div class="col-auto p-4">
+        	<img src="media/common/logo5.jpg"  class="rounded-circle logo" height="100px" width="100px" />
+        </div>
+
+        <div class="col-auto p-4">
+        	<img src="media/common/logo6.png"  class="rounded-circle mt-4 logo" height="70px" width="70px" />
+        </div>
+
+    </div>
+</div>
+
+<br />
+<br />
+													<!--News-->
+<div class="container-fluid">
+	<div class="row no-gutters justify-content-center">
+    	<div class="col-md-4">
+            <h4 class="text-center" style="color:#90529D; font-size:16px; font-family: 'Sen', sans-serif;"><a style="color:#90529D;" href="">NEWS & BLOGS</a> </h4> </div>
+    </div>
+   	<div class="row justify-content-center">
+    	<div class="col-md-7">     <h2 class="text-center" style="color:#000;">Latest Updates</h2>
+</div>
+    </div>
+    <br />
+
+<div class="container-fluid">
+	<div class="row no-gutters justify-content-center">
+    	<div class="col-md-4" >
+        	<img src="media/common/news1.jpg" class="card-img img-fluid mx-auto d-block" style="width:70%;"/>
+           
+            <div class="row">
+            	<div class="col-md-8 ml-5" style="background-color:white;">
+                <p class="ml-3" style="color:#999;"> Dec 05, 2019</p>
+        		<h3 class="ml-3">Heading of first blog post</h3>
+        		<p class="ml-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros justo</p>
+        			<br />
+        		<button class="ml-3" style="border:none; backface-visibility:hidden; color:#90529D; background-color:white;" data-toggle="modal" data-target="#myModal"> Read More</button>
+
+
+          <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Heading of first blog post</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        </div>
+        <div class="modal-body">
+                	<img src="media/common/news1.jpg" class="card-img" height="auto" width="100%" />
+                    <br />
+         <p style="color:#999;"> Dec 05, 2019</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros justo, pharetra in elementum ut, consequat eget augue. Ut iaculis in libero ac placerat. Nam vitae iaculis sapien.Pellentesque velit orci, suscipit ut finibus vitae, luctus sit amet dolor.Pellentesque velit orci, suscipit ut finibus vitae, luctus sit amet dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros justo, pharetra in elementum ut, consequat eget augue. Ut iaculis in libero ac placerat. Nam vitae iaculis sapien.Pellentesque velit orci, suscipit ut finibus vitae, luctus sit amet dolorPellentesque velit orci, suscipit ut finibus vitae, luctus sit amet dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros justo, pharetra in elementum ut, consequat eget augue. Ut iaculis in libero ac placerat. Nam vitae iaculis sapien.Pellentesque velit orci, suscipit ut finibus vitae, luctus sit amet dolor"</p>
+          <p>it orci, suscipit ut finibus vitae, luctus sit amet dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros justo, pharetra in elementum ut, consequat eget augue. Ut iaculis in libero ac placerat. Nam vitae iaculis sapien.Pellentesque velit orci, suscipit ut finibus vitae, luctus sit amet dolorPellentesque velit orci, suscipit ut finibus vitae, luctus sit amet dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros justo, pharetra in elementum ut, consequat eget augue. Ut iaculis in libero ac placerat. Nam vitae iaculis sapien.Pellentesque velit orci, suscipit ut finibus vitae, luctus sit amet dolor"</p>
+        </div>
+        <div class="modal-footer">
+          <button style="border:none; backface-visibility:hidden; color:#90529D; background-color:white;" type="button" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                </div>
+            </div>
+        </div>
+        
+            	<div class="col-md-4">
+        	<img src="media/common/news2.jpg" class="card-img img-fluid mx-auto d-block" style="width:70%;" />
+            <div class="row">
+            	<div class="col-md-8 ml-5">
+                <p class="ml-3" style="color:#999;"> Dec 12, 2019</p>
+        		<h3 class="ml-3">Heading of second blog post</h3>
+        		<p class="ml-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros justo</p>
+        			<br />
+        		<button class="ml-3" style="border:none; backface-visibility:hidden; color:#90529D; background-color:white;" data-toggle="modal" data-target="#news_2"> Read More</button>
+
+          <div class="modal fade" id="news_2" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Heading of second blog post</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        </div>
+        <div class="modal-body">
+                	<img src="media/common/news2.jpg" height="auto" width="100%" />
+					<br />
+         <p style="color:#999;"> Dec 12, 2019</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros justo, pharetra in elementum ut, consequat eget augue. Ut iaculis in libero ac placerat. Nam vitae iaculis sapien.Pellentesque velit orci, suscipit ut finibus vitae, luctus sit amet dolor.Pellentesque velit orci, suscipit ut finibus vitae, luctus sit amet dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros justo, pharetra in elementum ut, consequat eget augue. Ut iaculis in libero ac placerat. Nam vitae iaculis sapien.Pellentesque velit orci, suscipit ut finibus vitae, luctus sit amet dolorPellentesque velit orci, suscipit ut finibus vitae, luctus sit amet dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros justo, pharetra in elementum ut, consequat eget augue. Ut iaculis in libero ac placerat. Nam vitae iaculis sapien.Pellentesque velit orci, suscipit ut finibus vitae, luctus sit amet dolor"</p>
+        </div>
+        <div class="modal-footer">
+          <button style="border:none; backface-visibility:hidden; color:#90529D; background-color:white;" type="button" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+                </div>
+            </div>
+        </div>
+
+    	<div class="col-md-4">
+        	<img src="media/common/news3.jpg"class="card-img img-fluid mx-auto d-block" style="width:70%;" />
+            <div class="row align-items-start">
+            	<div class="col-md-8 ml-5">
+                <p class="ml-3" style="color:#999;"> Dec 29, 2019</p>
+        		<h3 class="ml-3">Heading of third blog post</h3>
+        		<p class="ml-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros justo</p>
+        			<br />
+        		<button class="ml-3" style="border:none; backface-visibility:hidden; color:#90529D; background-color:white;" data-toggle="modal" data-target="#news_3"> Read More</button>
+
+          <div class="modal fade" id="news_3" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Heading of third blog post</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        </div>
+        <div class="modal-body">
+         <img src="media/common/news3.jpg" height="auto" width="100%" />
+			<br />
+         <p style="color:#999;"> Dec 29, 2019</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros justo, pharetra in elementum ut, consequat eget augue. Ut iaculis in libero ac placerat. Nam vitae iaculis sapien.Pellentesque velit orci, suscipit ut finibus vitae, luctus sit amet dolor.Pellentesque velit orci, suscipit ut finibus vitae, luctus sit amet dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros justo, pharetra in elementum ut, consequat eget augue. Ut iaculis in libero ac placerat. Nam vitae iaculis sapien.Pellentesque velit orci, suscipit ut finibus vitae, luctus sit amet dolorPellentesque velit orci, suscipit ut finibus vitae, luctus sit amet dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros justo, pharetra in elementum ut, consequat eget augue. Ut iaculis in libero ac placerat. Nam vitae iaculis sapien.Pellentesque velit orci, suscipit ut finibus vitae, luctus sit amet dolor"</p>
+        </div>
+        <div class="modal-footer">
+          <button style="border:none; backface-visibility:hidden; color:#90529D; background-color:white;" type="button" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</div>
+
+<br />
+<br />
+
+<div class="container-fluid" style="background-image:url(media/common/poster2.jpg)">
+<div class="row justify-content-around">
+<div class="col-md-4"></div>
+<div class="col-md-3 mt-4 mb-4" style=" background-image:linear-gradient(to bottom,#90529D,#693188);">
+<br /><p>&nbsp;</p>
+    	<h2 style="color:white;">Where to find us</h2>
+      
+        
+        <h4 style="color:white;">Our Office:</h4>
+        <p style="color:white;">Lorem ipsum dolor sit amet</p>
+        
+      
+         <h4 style="color:white;">Phone:</h4>
+        <p style="color:white;">0900-78601</p>
+       
+		
+         <h4 style="color:white;">Email:</h4>
+        <p style="color:white;">loremipsum@hotmail.com</p>
+<br />
+<br />
+</div>
+</div>
+</div>
+
+<br />
+<br />
+
+<div class="container-fluid">
+<div class="row no-gutters justify-content-center">
+<div class="col-auto">
+<img src="media/common/logox.png" />
+</div>
+</div>
+<div class="row justify-content-center">
+<div class="col-auto">
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link" href="logodesign.html">Logo Design</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="webdesign.html">Web Design</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="corporate.html">Corporate Branding</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="marketing.html">Digital Marketing</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="illustration.html">Illustration</a>
+  </li>
+</ul>
+<br />
+<div class="row justify-content-center">
+<div class="col-auto">
+    <div class="sm_circle"> 
+      <img src="media/common/facebook.png" alt="icon1" style="margin:12px; height:30px; width:30px;" /></div>
+       </div>
+<div class="col-auto">
+     <div class="sm_circle"> 
+    <img src="media/common/twitter.png" alt="icon1" style="margin:12px; height:30px; width:30px;"/></div>
+       </div>
+<div class="col-auto">
+    <div class="sm_circle"> 
+    <img src="media/common/linkedin.png" alt="icon1" style="margin:12px; height:26px; width:26px;" /></div>
+    </div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<br />
+<br />
+<br />
+  <div class="footer text-center">
+   <a href="" style="padding:8px; color:black;">Terms of Use</a>
+   <a href="" style="padding:8px; color:black;">Privacy Policy</a>
+   <p>All Rights Reserved.</p>
+   
+    <!-- end .footer --></div>
+
+</body>
+</html>
